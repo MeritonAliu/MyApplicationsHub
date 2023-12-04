@@ -21,7 +21,7 @@ class ApplicationsController < ApplicationController
 
   # POST /applications or /applications.json
   def create
-    @application = Application.new(application_params)
+    @application = current_user.applications.build(application_params)
 
     respond_to do |format|
       if @application.save
@@ -60,7 +60,7 @@ class ApplicationsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_application
-      @application = Application.find(params[:id])
+      @application = current_user.applications.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
