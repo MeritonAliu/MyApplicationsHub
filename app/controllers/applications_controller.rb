@@ -1,9 +1,10 @@
 class ApplicationsController < ApplicationController
   before_action :set_application, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /applications or /applications.json
   def index
-    @applications = Application.all
+    @applications = current_user.applications
   end
 
   # GET /applications/1 or /applications/1.json
