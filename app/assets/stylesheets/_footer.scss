@@ -1,0 +1,25 @@
+@import 'variables';
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: $background-color;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+
+  p,a{
+    color: $text-color;
+    font-size: 16px;
+    padding: 8px;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: #f96d00;
+    text-decoration: underline;
+  }
+}

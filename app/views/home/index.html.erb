@@ -1,3 +1,17 @@
-<p>Ba</p>
+<div>
+  <h3>Homepage</h2>
+  <% if user_signed_in? %>
+    Welcome, <%= current_user.email %>
+    <div>
+      To view your applicaitons, <%= link_to 'click here', applications_path %>
+    </div>
+  <% else %>
+    Please sign in or sign up.
+    <%= link_to 'Profile', new_user_session_path(@user) %>
+  <% end %>
+</div>
+
+
+
 
 
