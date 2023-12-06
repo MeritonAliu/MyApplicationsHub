@@ -1,35 +1,25 @@
 
-<body>
+<body class="myapplications-index">
   <h1>My Applications</h1>
 
-<%= link_to "Register a new application", new_application_path %>
+  <div class="newapp">
+    <%= link_to "Register a new application", new_application_path %>
+  </div>
 
-
-<table>
-  <thead>
-    <tr>
-      <th>Application</th>
-      <th>Created at</th>
-      <th>Company</th>
-      <th>Status</th>
-      <th>Description</th>
-      <th colspan="3">Options</th>
-    </tr>
-  </thead>
-  <tbody>
+  <div class="my-applications">
     <% @applications.each do |application| %>
-      <tr>
-        <td><%= application.name %></td>
-        <td><%= application.created_at.strftime("%d. %m %Y") %></td>
-        <td> <%=application.company %> Company </td>
-        <td> <%=application.status %> status </td>
-        <td> <%=application.description %></td>
-        <td><%= link_to 'Show', application %></td>
-        <td><%= link_to 'Edit', edit_application_path(application) %></td>
-        <td><%= link_to 'Destroy', application, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div class="job-card">
+        <h2><%= application.name %></h2>
+        <p><%= application.company %> Company</p>
+        <p><%= application.status %> status</p>
+              <p><%= application.description %></p>
+        <div class="actions card">
+          <%= link_to "Show", application_path(application) %>
+          <%= link_to "Edit", edit_application_path(application) %>
+          <%= link_to "Delete", application_path(application), method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+      </div>
     <% end %>
-  </tbody>
-  </table>
+  </div>
 </body>
 

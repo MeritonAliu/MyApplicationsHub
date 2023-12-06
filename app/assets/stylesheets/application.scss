@@ -22,13 +22,56 @@
 @import 'footer';
 @import 'header';
 
+.myapplications-index{
+  .newapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 12px;
+    background-color: #8BD3E6;
+    max-width: 500px;
+    min-width: 500px;
+  }
+  
+  .my-applications{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    .job-card{
+      border: 2px solid #000000;
+      border-radius: 12px;
+      background-color: #8BD3E6;
+      margin: 10px;
+      padding: 10px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 300px;
+      min-width: 300px;
+    }
+    
+  }
+}
 
+
+h1,p,a {
+  color: black;
+}
 
 :root{
   font-family: 'Roboto', sans-serif;
 }
 
 html, body {
+  background-color: whitesmoke;
   height: 100%;
   margin: 0;
   display: flex;
