@@ -1,11 +1,10 @@
 
 <body class="myapplications-index">
   <h1>My Applications</h1>
-
+<div class="listing">
   <div class="newapp">
     <%= link_to "Register a new application", new_application_path %>
   </div>
-
   <div class="my-applications">
     <% @applications.each do |application| %>
       <div class="job-card">
@@ -21,5 +20,6 @@
       </div>
     <% end %>
   </div>
+</div>
 </body>
 

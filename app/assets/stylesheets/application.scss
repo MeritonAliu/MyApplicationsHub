@@ -16,30 +16,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-
 @import 'variables';
 @import 'reset';
 @import 'footer';
 @import 'header';
 
 .myapplications-index{
-  .newapp{
+  .listing{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    background-color: #8BD3E6;
     align-items: center;
+  }
+
+  .newapp{
     margin: 20px;
     padding: 20px;
     border: 2px solid #000000;
-    border-radius: 12px;
     background-color: #8BD3E6;
-    max-width: 500px;
-    min-width: 500px;
   }
   
   .my-applications{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
   
@@ -49,15 +48,19 @@
       background-color: #8BD3E6;
       margin: 10px;
       padding: 10px;
-      height: 300px;
+      height: 150px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      max-width: 300px;
-      min-width: 300px;
+      max-width: 800px;
+      min-width: 800px;
+        h2{
+          font-size: 24px;
+          font-weight: bold;
+          align-self: flex-start;
+        }
     }
-    
   }
 }
 
@@ -72,9 +75,9 @@ h1,p,a {
 
 html, body {
   background-color: whitesmoke;
-  height: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
