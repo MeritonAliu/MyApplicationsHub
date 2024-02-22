@@ -1,0 +1,10 @@
+@import 'variables';
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 8%;
+  align-items: center;
+  border: 2px solid red; // Increase the border width and change the color to blue
+}
