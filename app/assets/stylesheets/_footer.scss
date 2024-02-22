@@ -1,0 +1,35 @@
+@import 'variables';
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $background-color;
+  color: $text-color;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-item {
+    display: flex;
+    align-items: center;
+    justify-content: center; // BEGIN: Center items horizontally
+  }
+
+  .footer-link {
+    a{
+      margin: 0 10px;
+      text-decoration: none; // Remove underline
+      color: #A5C2AD;
+      font-size: 24px; // BEGIN: Increase font size
+      font-family: "Roboto Serif", serif;
+    }
+  }
+}

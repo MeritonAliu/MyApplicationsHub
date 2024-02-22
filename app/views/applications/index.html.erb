@@ -1,14 +1,25 @@
-<p style="color: green"><%= notice %></p>
 
-<h1>Applications</h1>
-
-<div id="applications">
-  <% @applications.each do |application| %>
-    <%= render application %>
-    <p>
-      <%= link_to "Show this application", application %>
-    </p>
-  <% end %>
+<body class="myapplications-index">
+  <h1>My Applications</h1>
+<div class="listing">
+  <div class="newapp">
+    <%= link_to "Register a new application", new_application_path %>
+  </div>
+  <div class="my-applications">
+    <% @applications.each do |application| %>
+      <div class="job-card">
+        <h2><%= application.name %></h2>
+        <p><%= application.company %> Company</p>
+        <p><%= application.status %> status</p>
+              <p><%= application.description %></p>
+        <div class="actions card">
+          <%= link_to "Show", application_path(application) %>
+          <%= link_to "Edit", edit_application_path(application) %>
+          <%= link_to "Delete", application_path(application), method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
+</body>
 
-<%= link_to "New application", new_application_path %>

@@ -1,0 +1,83 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+@import 'variables';
+@import 'reset';
+@import 'footer';
+@import 'header';
+
+.myapplications-index{
+  .listing{
+    display: flex;
+    flex-direction: column;
+    background-color: #8BD3E6;
+    align-items: center;
+  }
+
+  .newapp{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #000000;
+    background-color: #8BD3E6;
+  }
+  
+  .my-applications{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    .job-card{
+      border: 2px solid #000000;
+      border-radius: 12px;
+      background-color: #8BD3E6;
+      margin: 10px;
+      padding: 10px;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 800px;
+      min-width: 800px;
+        h2{
+          font-size: 24px;
+          font-weight: bold;
+          align-self: flex-start;
+        }
+    }
+  }
+}
+
+
+h1,p,a {
+  color: black;
+}
+
+:root{
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  background-color: whitesmoke;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
