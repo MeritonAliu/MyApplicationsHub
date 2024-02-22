@@ -1,9 +1,15 @@
 <header>
-  <nav>
-    <ul>
-      <li><%= link_to 'Home',root_path %></li>
-      <li><%= link_to 'Applications',applications_path %></li>
-      <li><%= link_to 'Markets',new_application_path %></li>
+    <ul class="start">
+      <li><%= link_to 'Applio', root_path %></li>
+      <li><%= link_to 'Applications', applications_path %></li>
+      <li><%= link_to 'Markets', new_application_path %></li>
     </ul>
-  </nav>
+    <ul class="end">
+      <% if user_signed_in? %>
+        <li><%= link_to 'Profile', account_path %></li>
+      <% else %>
+        <li><%= link_to 'Register', new_user_registration_path %></li>
+        <li><%= link_to 'Login', new_user_session_path %></li>
+      <% end %>
+    </ul>
 </header>
