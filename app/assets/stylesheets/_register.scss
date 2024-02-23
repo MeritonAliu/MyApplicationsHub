@@ -6,13 +6,19 @@
   align-self: center;
   margin-top: 8%;
   align-items: center;
-  border: 2px solid red; // Increase the border width and change the color to blue
+  background-color: #A5C2AD;
+  color: #5A3D52;
+  font-family: "Roboto Serif", serif;
+  min-width: 350px;
+  border-radius: 24px;
+  border-color: #181818;
+  border-width: 2px;
+  border-style: solid;
 
-  h2{
-    color: #A5C2AD;
-  }
-
-  a,label,em{
-    color: #A5C2AD;
+  form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
