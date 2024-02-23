@@ -1,0 +1,42 @@
+@import 'variables';
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 8%;
+  align-items: center;
+  color: #A5C2AD;
+  font-family: "Roboto Serif", serif;
+  min-width: 350px;
+  border-radius: 24px;
+  border-color: #A5C2AD;
+  border-width: 2px;
+  border-style: solid;
+
+  form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    input{
+      width: 100%;
+      margin-bottom: 8px;
+      margin: 8px 0;
+      border-radius: 16px;
+      border-bottom: 5px solid #A5C2AD;
+      min-height: 40px;
+      padding-left: 16px;
+      padding-right: 16px;
+      resize: none;
+      background-color: #A5C2AD;
+      color: #16161D;
+    }
+
+    input:focus {
+      outline: none;
+      border-bottom: 5px solid #A5C2AD;
+    }
+  }
+}
