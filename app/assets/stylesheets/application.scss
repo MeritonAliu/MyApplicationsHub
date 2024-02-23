@@ -22,7 +22,9 @@
 @import 'header';
 @import 'register';
 
+
 .myapplications-index{
+
   .listing{
     display: flex;
     flex-direction: column;
@@ -75,10 +77,11 @@ h1,p,a {
 }
 
 html, body {
-  background-color: whitesmoke;
+  background-color: #16161D;
   margin: 0;
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  position: relative;
+  min-height: 100vh;
 }
 
