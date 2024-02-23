@@ -8,6 +8,7 @@ footer{
   background-color: #16161D;
   color: $text-color;
   height: 64px;
+  z-index: 1000;
 
   .line{
     border-color: #A5C2AD;
@@ -19,7 +20,7 @@ footer{
       align-items: center;
       justify-content: center; // BEGIN: Center items horizontally
       height: 100%;
-      
+
       .footer-link {
         a{
           margin: 0 10px;
