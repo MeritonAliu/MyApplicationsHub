@@ -1,7 +1,7 @@
 <div>
   <h3>Homepage</h2>
   <% if user_signed_in? %>
-    Welcome, <%= current_user.email %>
+    Welcome, <%= current_user.username %>
     <div>
       To view your applicaitons, <%= link_to 'click here', applications_path %>
     </div>
