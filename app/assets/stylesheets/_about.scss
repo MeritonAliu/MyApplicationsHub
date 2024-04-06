@@ -1,0 +1,23 @@
+@import 'variables';
+
+.about {
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .a-container{
+    display: flex;
+    flex-direction: column;
+    a{
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}
