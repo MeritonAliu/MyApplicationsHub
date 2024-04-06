@@ -24,51 +24,7 @@
 @import 'login';
 @import 'home';
 @import 'about';
-
-
-.myapplications-index{
-
-  .listing{
-    display: flex;
-    flex-direction: column;
-    background-color: #8BD3E6;
-    align-items: center;
-  }
-
-  .newapp{
-    margin: 20px;
-    padding: 20px;
-    border: 2px solid #000000;
-    background-color: #8BD3E6;
-  }
-  
-  .my-applications{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-  
-    .job-card{
-      border: 2px solid #000000;
-      border-radius: 12px;
-      background-color: #8BD3E6;
-      margin: 10px;
-      padding: 10px;
-      height: 150px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 800px;
-      min-width: 800px;
-        h2{
-          font-size: 24px;
-          font-weight: bold;
-          align-self: flex-start;
-        }
-    }
-  }
-}
+@import 'applications';
 
 
 h1,p,a,h3 {

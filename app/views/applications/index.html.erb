@@ -9,10 +9,12 @@
     <% @applications.each do |application| %>
       <div class="job-card">
         <h2><%= application.name %></h2>
-        <p><%= application.company %> Company</p>
-        <p><%= application.status %> status</p>
-              <p><%= application.description %></p>
-        <div class="actions card">
+        <div class="job-card-body">
+          <p>Company: <%= application.company %></p>
+          <p>Status: <%= application.status || "Not specified" %> </p>
+          <p>Location: <%= application.location %></p>
+        </div>
+        <div class="actions-card">
           <%= link_to "Show", application_path(application) %>
           <%= link_to "Edit", edit_application_path(application) %>
           <%= link_to "Delete", application_path(application), method: :delete, data: { confirm: 'Are you sure?' } %>

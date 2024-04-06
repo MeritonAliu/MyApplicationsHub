@@ -1,0 +1,16 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "myapps",
+      "database": "${workspaceFolder:MyApplicationsHub}/storage/development.sqlite3"
+    },
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "myapps2",
+      "database": "${workspaceFolder:MyApplicationsHub}/storage/test.sqlite3"
+    }
+  ]
+}
