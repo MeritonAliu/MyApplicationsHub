@@ -22,6 +22,7 @@
 @import 'header';
 @import 'register';
 @import 'login';
+@import 'home';
 
 
 .myapplications-index{
@@ -70,7 +71,7 @@
 
 
 h1,p,a,h3 {
-  color: white;
+  color: $text-color;
 }
 
 :root{

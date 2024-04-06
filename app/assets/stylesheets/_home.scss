@@ -1,0 +1,16 @@
+@import 'variables';
+
+.home {
+  color: $text-color;
+  text-align: center;
+
+  h1{
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .view-applications{
+    margin-top: 20px;
+    align-self: center;
+  }
+}
