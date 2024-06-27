@@ -1,3 +1,5 @@
+
+
 <%= form_with(model: application) do |form| %>
   <% if application.errors.any? %>
     <div style="color: red">
@@ -11,25 +13,27 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-  </div>
+<div class="newForm">
+    <div>
+      <%= form.label :name, style: "display: block" %>
+      <%= form.text_field :name %>
+    </div>
 
-  <div>
-    <%= form.label :location, style: "display: block" %>
-    <%= form.text_area :location %>
-  </div>
+    <div>
+      <%= form.label :location, style: "display: block" %>
+      <%= form.text_area :location %>
+    </div>
 
-  <div>
-    <%= form.label :company, style: "display: block" %>
-    <%= form.text_field :company %>
-  </div>
+    <div>
+      <%= form.label :company, style: "display: block" %>
+      <%= form.text_field :company %>
+    </div>
 
-  <div>
-    <%= form.label :status, style: "display: block" %>
-    <%= form.select :status, Application.statuses.keys.map { |status| [status.titleize, status] }, { include_blank: 'Select Status' } %>
-  </div>
-    <%= form.submit %>
-  </div>
-<% end %>
+    <div>
+      <%= form.label :status, style: "display: block" %>
+      <%= form.select :status, Application.statuses.keys.map { |status| [status.titleize, status] }, { include_blank: 'Select Status' } %>
+    </div>
+      <%= form.submit %>
+    </div>
+  <% end %>
+</div>

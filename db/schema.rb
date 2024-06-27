@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_06_042331) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_27_193316) do
   create_table "applications", force: :cascade do |t|
     t.string "name"
     t.text "location"
@@ -20,6 +20,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_06_042331) do
     t.string "company"
     t.string "url"
     t.string "status"
+    t.text "description"
     t.index ["user_id"], name: "index_applications_on_user_id"
   end
 
